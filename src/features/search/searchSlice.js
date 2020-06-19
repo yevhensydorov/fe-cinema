@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { API_KEYS } from "../../constants/constants";
 
 export const searchSlice = createSlice({
   name: "search",
@@ -26,8 +27,7 @@ export const { moviesLoading, moviesReceived } = searchSlice.actions;
 
 export const fetchMovies = (movieName) => async (dispatch) => {
   dispatch(moviesLoading());
-  //Change URL to the local one
-  const response = await fetch(`https://api.github.com/users/${movieName}`);
+  const response = await fetch(`${API_KEYS.API_URL}movies/${movieName}`);
   let responseData = await response.json();
   dispatch(moviesReceived(responseData));
 };
