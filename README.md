@@ -1,13 +1,13 @@
-# be-cinema
+# Movies search project powered by React and Golang server
 
-Golang backend server for cinema directory project
+Small project which helps people to find the movie using IMDB API.
 
-# Running in Docker
+# Running backend server in Docker
 
-docker build --tag be-cinema-test .<br />
-docker run -p 8080:8080 --env-file .env be-cinema-test:latest
+`docker build --tag be-cinema-test .`<br />
+`docker run -p 8080:8080 --env-file .env be-cinema-test:latest`
 
-# fe-cinema
+# Running front end
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
