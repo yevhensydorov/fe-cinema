@@ -1,8 +1,8 @@
 # Movies search project powered by React and Golang server
 
 Small learning project which helped me to to get knowledge in building Golang server and using Redux toolkit.<br />
-Technologies that were using in this project are [React], [Redux Toolkit](https://redux-toolkit.js.org/), [Golang].<br />
-Golang Packages list: [gorilla/mux], [godotenv]
+Technologies that were using in this project are **React**, [Redux Toolkit](https://redux-toolkit.js.org/), **Golang**.<br />
+Golang Packages list: **gorilla/mux**, **godotenv**
 
 # IMDB 3rd party API
 
@@ -10,7 +10,7 @@ Project is using IMDB API data. Prior to run it you need to get an API key from 
 
 # ENV parameters
 
-To run this project locally you need to create .env file in the root of the project.
+To run this project locally you need to create .env file in the root of the project.<br/>
 `touch .env`
 
 **Example of .env file setup**
