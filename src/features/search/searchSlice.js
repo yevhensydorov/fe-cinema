@@ -27,7 +27,7 @@ export const { moviesLoading, moviesReceived } = searchSlice.actions;
 
 export const fetchMovies = (movieName) => async (dispatch) => {
   dispatch(moviesLoading());
-  const response = await fetch(`${API_KEYS.API_URL}movies/${movieName}`);
+  const response = await fetch(`${API_KEYS.API_URL}movies/search/${movieName}`);
   let responseData = await response.json();
   dispatch(moviesReceived(responseData));
 };

@@ -1,0 +1,11 @@
+.moviesListWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.movieItemWrapper {
+  list-style-type: none;
+  border: 1px solid black;
+  margin-bottom: 8px;
+}
