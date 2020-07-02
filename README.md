@@ -10,7 +10,7 @@ Project is using IMDB API data. Prior to run it you need to get an API key from 
 
 # ENV parameters
 
-Tu run this project locally you need to create .env file in the root of the project.
+To run this project locally you need to create .env file in the root of the project.
 `touch .env`
 
 **Example of .env file setup**
