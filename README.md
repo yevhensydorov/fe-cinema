@@ -1,11 +1,33 @@
 # Movies search project powered by React and Golang server
 
-Small project which helps people to find the movie using IMDB API.
+Small learning project which helped me to to get knowledge in building Golang server and using Redux toolkit.<br />
+Technologies that were using in this project are [React], [Redux Toolkit](https://redux-toolkit.js.org/), [Golang].<br />
+Golang Packages list: [gorilla/mux], [godotenv]
+
+# IMDB 3rd party API
+
+Project is using IMDB API data. Prior to run it you need to get an API key from [IMDB API](http://www.omdbapi.com/#usage)
+
+# ENV parameters
+
+Tu run this project locally you need to create .env file in the root of the project.
+`touch .env`
+
+**Example of .env file setup**
+
+```javascript
+REACT_APP_LOCAL_API_URL=http://localhost:8080/
+
+
+API_KEY=YOUR_API_KEY
+API_URL=http://www.omdbapi.com/?apikey=
+SERVER_PORT=:8080
+```
 
 # Running backend server in Docker
 
-`docker build --tag be-cinema-test .`<br />
-`docker run -p 8080:8080 --env-file .env be-cinema-test:latest`
+`docker build --tag be-cinema .`<br />
+`docker run -p 8080:8080 --env-file .env be-cinema:latest`
 
 # Running front end
 
