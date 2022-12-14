@@ -15,7 +15,10 @@ export function Search() {
           onChange={(e) => setMovieName(e.target.value)}
           type="text"
         />
-        <button onClick={() => dispatch(fetchMovies(movieName || ""))}>
+        <button
+          onClick={() => dispatch(fetchMovies(movieName || ""))}
+          disabled={!movieName}
+        >
           Search
         </button>
       </div>

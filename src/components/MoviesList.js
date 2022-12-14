@@ -6,21 +6,25 @@ import "../styles/MoviesListStyles.css";
 
 export function MoviesList({ movies }) {
   const renderMovies = () => {
-    return movies.map((movie) => {
-      return (
-        <li className="movieItemWrapper" key={movie.imdbID}>
-          <Link to={`/movies/${movie.imdbID}`}>
-            <MovieItem
-              title={movie.title}
-              year={movie.year}
-              imdbId={movie.imdbID}
-              imgUrl={movie.poster}
-            />
-          </Link>
-        </li>
-      );
-    });
+    if (!movies) {
+      return <div>Empty list, try to search again</div>;
+    } else {
+      return movies.map((movie) => {
+        return (
+          <li className="movieItemWrapper" key={movie.imdbID}>
+            <Link to={`/movies/${movie.imdbID}`}>
+              <MovieItem
+                title={movie.title}
+                year={movie.year}
+                imgUrl={movie.poster}
+              />
+            </Link>
+          </li>
+        );
+      });
+    }
   };
+
   return (
     <>
       <p>Movies list:</p>

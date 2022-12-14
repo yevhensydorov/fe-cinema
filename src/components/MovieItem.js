@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MovieItem({ title, year, imdbId, imgUrl }) {
+export default function MovieItem({ title, year, imgUrl }) {
   return (
     <article>
       <h3>{title}</h3>

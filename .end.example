@@ -1,0 +1,6 @@
+REACT_APP_LOCAL_API_URL=http://localhost:8080/
+
+
+API_KEY=YOUR_OMDB_API_KEY
+API_URL=http://www.omdbapi.com/?apikey=
+SERVER_PORT=:8080

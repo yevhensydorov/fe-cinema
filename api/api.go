@@ -107,7 +107,6 @@ func GetMovieDetails(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		log.Print("Can't fetch movie details", err)
 	}
-	// fmt.Println(movieDetail)
 
 	if err := json.Unmarshal(bytes, &movieDetail); err != nil {
 		fmt.Println("Error parsing json", err)

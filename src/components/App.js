@@ -7,7 +7,7 @@ function App() {
   const movies = useSelector((state) => {
     return state.searchReducer.movies.search;
   });
-  // const isLoading = useSelector((state) => state.searchReducer.loading);
+  const isLoading = useSelector((state) => state.searchReducer.loading);
 
   return (
     <div className="App">
@@ -16,7 +16,8 @@ function App() {
       </header>
       <section>
         <Search />
-        {movies && <MoviesList movies={movies} />}
+        {isLoading && <div>Loading...</div>}
+        <MoviesList movies={movies} />
       </section>
     </div>
   );

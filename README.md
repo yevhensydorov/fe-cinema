@@ -26,6 +26,8 @@ SERVER_PORT=:8080
 
 # Running backend server in Docker
 
+This project use a Dockerfile to run the golang so we don't need to install Go locally. Make sure that the Docker is running on your machine, though.
+
 `docker build --tag be-cinema .`<br />
 `docker run -p 8080:8080 --env-file .env be-cinema:latest`
 
@@ -36,6 +38,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+Install all dependencies needed to run the front-end
 
 ### `yarn start`
 
